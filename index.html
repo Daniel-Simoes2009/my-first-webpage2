@@ -1,48 +1,113 @@
 <!DOCTYPE html>
-<html></html>
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<html lang="en">
 <head>
-  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-    <header class="mdl-layout__header">
-      <div class="mdl-layout__header-row">
-        <!-- Title -->
-        <span class="mdl-layout-title">The Future Edicational Party</span>
-      </div>
-      <!-- Tabs -->
-      <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
-        <a href="#scroll-tab-1" class="mdl-layout__tab is-active">Party Leader</a>
-        <a href="#scroll-tab-2" class="mdl-layout__tab">Political Agenda</a>
-        <a href="#scroll-tab-3" class="mdl-layout__tab">Main Objectives</a>
-        <a href="#scroll-tab-4" class="mdl-layout__tab">Join</a>
-        <a href="#scroll-tab-5" class="mdl-layout__tab">News</a>
-        <a href="#scroll-tab-6" class="mdl-layout__tab">Events</a>
-      </div>
-    </header>
-    <div class="mdl-layout__drawer">
-      <span class="mdl-layout-title">test </span>
-    </div>
-    <main class="mdl-layout__content">
-      <section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
-        <div class="page-content">Content test on tab 1</div>
-      </section>
-      <section class="mdl-layout__tab-panel" id="scroll-tab-2">
-        <div class="page-content"><!-- Your content goes here --></div>
-      </section>
-      <section class="mdl-layout__tab-panel" id="scroll-tab-3">
-        <div class="page-content"><!-- Your content goes here --></div>
-      </section>
-      <section class="mdl-layout__tab-panel" id="scroll-tab-4">
-        <div class="page-content"><!-- Your content goes here --></div>
-      </section>
-      <section class="mdl-layout__tab-panel" id="scroll-tab-5">
-        <div class="page-content"><!-- Your content goes here --></div>
-      </section>
-      <section class="mdl-layout__tab-panel" id="scroll-tab-6">
-        <div class="page-content"><!-- Your content goes here --></div>
-      </section>
-    </main>
-  </div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDL Layout Example</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.3.0/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        .page-content {
+            padding: 24px;
+        }
+        .mdl-layout__drawer-button {
+            color: white;
+        }
+        .demo-card-wide {
+            width: 100%;
+            max-width: 512px;
+            margin: 20px auto;
+        }
+    </style>
 </head>
-  
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title">My Website</span>
+                <div class="mdl-layout-spacer"></div>
+                <nav class="mdl-navigation mdl-layout--large-screen-only">
+                    <a class="mdl-navigation__link" href="">Home</a>
+                    <a class="mdl-navigation__link" href="">About</a>
+                    <a class="mdl-navigation__link" href="">Services</a>
+                    <a class="mdl-navigation__link" href="">Contact</a>
+                </nav>
+            </div>
+        </header>
+        
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Navigation</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="">Home</a>
+                <a class="mdl-navigation__link" href="">About</a>
+                <a class="mdl-navigation__link" href="">Services</a>
+                <a class="mdl-navigation__link" href="">Contact</a>
+            </nav>
+        </div>
+        
+        <main class="mdl-layout__content">
+            <div class="page-content">
+                <!-- Example Card -->
+                <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">Welcome</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis pellentesque lacus eleifend lacinia.
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                            Get Started
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Grid Example -->
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--4-col">
+                        <div class="mdl-card mdl-shadow--2dp">
+                            <div class="mdl-card__title">
+                                <h2 class="mdl-card__title-text">Feature 1</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                Feature description goes here.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col">
+                        <div class="mdl-card mdl-shadow--2dp">
+                            <div class="mdl-card__title">
+                                <h2 class="mdl-card__title-text">Feature 2</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                Feature description goes here.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col">
+                        <div class="mdl-card mdl-shadow--2dp">
+                            <div class="mdl-card__title">
+                                <h2 class="mdl-card__title-text">Feature 3</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                Feature description goes here.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer class="mdl-mini-footer">
+            <div class="mdl-mini-footer__left-section">
+                <div class="mdl-logo">Your Company Name</div>
+                <ul class="mdl-mini-footer__link-list">
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Privacy & Terms</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
